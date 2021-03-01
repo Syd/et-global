@@ -12,8 +12,9 @@ cmd=./etlded
 cfg=legacy6
 fi
 
-run="$cmd +set dedicated 2 +set fs_game $GAME +set rconpassword $RCONPASSWORD \
+run="$cmd +set dedicated 2 +set fs_game $GAME +set rconpassword $RCONPASS \
     +set sv_maxclients $MAXCLIENTS +set ettv_password $ETTVPASS \
-    +set sv_hostname $HOSTNAME +map $MAP +config $cfg"
+    +set sv_hostname $HOSTNAME +set g_password $JOINPASS +net_ip 0.0.0.0 \
+    +map $MAP +config $cfg"
 
 $run
