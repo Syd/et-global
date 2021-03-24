@@ -62,6 +62,7 @@ ENV MAXCLIENTS 24
 ENV HOSTNAME EThost
 ENV NOQUERY 1
 ENV BASEURL "https://www.gamestv.org/download/repository/et/etmain/"
+ENV REFPASS ""
 
 ADD run.sh run.sh
 USER root
