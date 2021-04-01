@@ -15,6 +15,7 @@ fi
 run="$cmd +set dedicated 2 +set fs_game $GAME +set rconpassword $RCONPASS \
     +set sv_maxclients $MAXCLIENTS +set ettv_password $ETTVPASS \
     +set sv_hostname $HOSTNAME +set g_password $JOINPASS +net_ip 0.0.0.0 \
+    +set sv_wwwDownload “1” \
     +set sv_wwwBaseURL $BASEURL +map $MAP +set refereePassword $REFPASS \
     +config $cfg"
 
