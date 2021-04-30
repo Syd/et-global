@@ -29,7 +29,7 @@ RUN wget https://raw.githubusercontent.com/etlegacy/etlegacy/099bf245a638ffbccfd
 RUN wget https://raw.githubusercontent.com/etlegacy/etlegacy/099bf245a638ffbccfde60ffc582cd48f5086e3a/etmain/configs/legacy5.config
 RUN wget https://raw.githubusercontent.com/etlegacy/etlegacy/099bf245a638ffbccfde60ffc582cd48f5086e3a/etmain/configs/legacy6.config
 WORKDIR /home/game/tmp
-RUN tar -xvf et.tar && tar -xvf etlegacy.tar.gz && cp -R etlegacy-v2.77.1-i386/* . && rm et.tar && rm etlegacy.tar.gz && rm -rf etlegacy-v2.77..11-i386
+RUN tar -xvf et.tar && tar -xvf etlegacy.tar.gz && cp -R etlegacy-v2.77.1-i386/* . && rm et.tar && rm etlegacy.tar.gz && rm -rf etlegacy-v2.77.11-i386
 
 # drop execute and write permissions
 USER root
@@ -61,7 +61,7 @@ ENV ETTVPASS 3ttv
 ENV MAXCLIENTS 24
 ENV HOSTNAME EThost
 ENV NOQUERY 1
-ENV BASEURL "https://www.gamestv.org/download/repository/et/etmain/"
+ENV BASEURL "http://www.gamestv.org/download/repository/et/etmain/"
 ENV REFPASS ""
 ENV SCPASS ""
 
