@@ -72,3 +72,7 @@ FROM sydz/et:latest
 COPY etmain/*.pk3 /home/game/etmain/
 WORKDIR /home/game/
 ```
+
+## todo
+- ettv slaves + flags
+- support running as an ettv slave
