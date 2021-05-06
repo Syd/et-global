@@ -57,3 +57,18 @@ password to log in as a referee
 #### SCPASS
 default: none
 password to log in as a shoutcaster
+
+
+## extending
+this image is intended to serve as a base image to extended via a multi-stage
+Dockerfile with your own maps, configs, mods, etc.
+
+
+### example
+
+``` dockerfile
+FROM sydz/et:latest
+
+COPY etmain/*.pk3 /home/game/etmain/
+WORKDIR /home/game/
+```
