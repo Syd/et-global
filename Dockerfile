@@ -61,7 +61,7 @@ ENV ETTVPASS 3ttv
 ENV MAXCLIENTS 24
 ENV HOSTNAME EThost
 ENV NOQUERY 1
-ENV BASEURL "http://www.gamestv.org/download/repository/et/etmain/"
+ENV BASEURL "http://www.gamestv.org/download/repository/et"
 ENV REFPASS ""
 ENV SCPASS ""
 
