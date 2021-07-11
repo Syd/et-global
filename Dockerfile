@@ -64,6 +64,7 @@ ENV NOQUERY 1
 ENV BASEURL "http://www.gamestv.org/download/repository/et"
 ENV REFPASS ""
 ENV SCPASS ""
+ENV GAMEPORT 27960
 
 ADD run.sh run.sh
 USER root
