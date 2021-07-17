@@ -65,6 +65,7 @@ ENV BASEURL "http://www.gamestv.org/download/repository/et"
 ENV REFPASS ""
 ENV SCPASS ""
 ENV GAMEPORT 27960
+ENV ETTVHOST ""
 
 ADD run.sh run.sh
 USER root
