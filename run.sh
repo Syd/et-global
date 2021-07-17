@@ -17,6 +17,7 @@ fi
 
 if [ "$GAME" = ettv ]; then
   run="$cmd +set ettv_autorecord 1 +set ettv_clientname $HOSTNAME +tv connect $ETTVHOST $ETTVPASS $JOINPASS"
+  $run
 else
   run="$cmd +set dedicated 2 +set fs_game $GAME +set rconpassword $RCONPASS \
     +set net_port $GAMEPORT \
