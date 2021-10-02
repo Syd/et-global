@@ -21,7 +21,7 @@ RUN apt-get -y install wget unzip
 USER game
 WORKDIR /home/game/tmp
 RUN wget http://files.games.scrimfind.org/et.tar
-RUN wget https://www.etlegacy.com/download/file/257 -O etlegacy.tar.gz
+RUN wget https://www.etlegacy.com/download/file/318 -O etlegacy.tar.gz
 RUN mkdir -p legacy/configs .etmain .etlegacy
 WORKDIR /home/game/tmp/legacy/configs
 RUN wget https://raw.githubusercontent.com/etlegacy/etlegacy/099bf245a638ffbccfde60ffc582cd48f5086e3a/etmain/configs/legacy1.config
@@ -29,7 +29,7 @@ RUN wget https://raw.githubusercontent.com/etlegacy/etlegacy/099bf245a638ffbccfd
 RUN wget https://raw.githubusercontent.com/etlegacy/etlegacy/099bf245a638ffbccfde60ffc582cd48f5086e3a/etmain/configs/legacy5.config
 RUN wget https://raw.githubusercontent.com/etlegacy/etlegacy/099bf245a638ffbccfde60ffc582cd48f5086e3a/etmain/configs/legacy6.config
 WORKDIR /home/game/tmp
-RUN tar -xvf et.tar && tar -xvf etlegacy.tar.gz && cp -R etlegacy-v2.77.1-i386/* . && rm et.tar && rm etlegacy.tar.gz && rm -rf etlegacy-v2.77.11-i386
+RUN tar -xvf et.tar && tar -xvf etlegacy.tar.gz && cp -R etlegacy-v2.78.0-i386/* . && rm et.tar && rm etlegacy.tar.gz && rm -rf etlegacy-v2.78.0-i386
 
 # drop execute and write permissions
 USER root
